@@ -23,3 +23,11 @@ Este projeto foi desenvolvido no **SENAI** como projeto final, utilizando o **ES
 **Importar dados ao ESP**: LittleFS
 **Protocolo de comunicação**: HTTP
 
+
+Projeto final:
+
+
+https://github.com/user-attachments/assets/81028c23-c716-406f-88eb-f817bb432fda
+
+
+
