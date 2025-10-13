@@ -3,10 +3,12 @@
 #include <LittleFS.h>
 #include <Servo.h>
 
+//Motor DC
 #define M1_IN1 5    // D1
 #define M1_IN2 4    // D2
 #define M1_ENA 13   // D7
 
+//Servomotores
 #define SERVO2_PIN 15   // D8
 #define SERVO3_PIN 12   // D6
 
@@ -31,19 +33,19 @@ void acionarMotor1() {
 
 void acionarMotor2() {
   servo2.write(180); // Gira
-  delay(2000);       // 2.0 segundos
+  delay(2000);       
   servo2.write(90);  // Para
 }
 
 void acionarMotor3() {
   servo3.write(180);
-  delay(2300);       // 2.3 segundos
+  delay(2300);     
   servo3.write(90);
 }
 
 void acionarLed() {
-  digitalWrite(LED_PIN, LOW);   // Liga (ativo em LOW)
-  delay(2000);                  // Aguarda 2 segundos
+  digitalWrite(LED_PIN, LOW);   // Liga
+  delay(2000);                
   digitalWrite(LED_PIN, HIGH);  // Desliga
 }
 
@@ -71,7 +73,7 @@ void setup() {
 
   pinMode(M1_IN1, OUTPUT); pinMode(M1_IN2, OUTPUT); pinMode(M1_ENA, OUTPUT);
   pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, HIGH); // Desligado (ativo em LOW)
+  digitalWrite(LED_PIN, HIGH);
 
   servo2.attach(SERVO2_PIN);
   servo3.attach(SERVO3_PIN);
